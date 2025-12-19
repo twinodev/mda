@@ -22,7 +22,14 @@
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
     body { background: #0f0f0f; color: #ffffff; line-height: 1.6; }
     header { background: linear-gradient(135deg, #7f00ff, #ffb703); padding: 80px 20px; text-align: center; }
-    header img { width: 120px; margin-bottom: 20px; border-radius: 50%; }
+    header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid rgba(255,255,255,0.6);
+    }
     header h1 { font-size: 3rem; font-weight: 700; }
     header p { font-size: 1.2rem; margin-top: 10px; }
     section { padding: 60px 20px; max-width: 1100px; margin: auto; }
@@ -88,10 +95,10 @@
   <h2>Gallery</h2>
   <p>Moments from classes, performances, battles, and community events.</p>
   <div class="grid">
-    <div class="card">📸 Performance Highlights</div>
-    <div class="card">📸 Training Sessions</div>
-    <div class="card">📸 Events & Shows</div>
-    <div class="card">📸 Talent Search Moments</div>
+    <div class="card"><img src="https://via.placeholder.com/400x300?text=Performance" alt="Performance" style="width:100%;border-radius:10px;"><p>Performance Highlights</p></div>
+    <div class="card"><img src="https://via.placeholder.com/400x300?text=Training" alt="Training" style="width:100%;border-radius:10px;"><p>Training Sessions</p></div>
+    <div class="card"><img src="https://via.placeholder.com/400x300?text=Events" alt="Events" style="width:100%;border-radius:10px;"><p>Events & Shows</p></div>
+    <div class="card"><img src="https://via.placeholder.com/400x300?text=Talent+Search" alt="Talent Search" style="width:100%;border-radius:10px;"><p>Talent Search Moments</p></div>
   </div>
 </section>
 
@@ -122,43 +129,90 @@
   </div>
 </section>
 
+<section class="vision">
+  <h2>Founder’s Vision</h2>
+  <div class="card">
+    <p style="font-size:1.2rem; font-style:italic;">“Dance is not just movement. It is how we communicate, grow, and empower the next generation.”</p>
+    <p style="margin-top:15px; font-weight:600;">— Twinomujuni Emmanuel (Sizzy-Afro)</p>
+  </div>
+</section>
+
 <section class="team">
   <h2>Our Team</h2>
   <p>The people driving the vision, creativity, and growth of Mbarara Dance Academy.</p>
   <div class="grid">
-    <div class="card">
-      <h3>Founder & Creative Director</h3>
-      <p>Leads artistic vision, choreography, brand identity, and overall direction of MDA.</p>
-    </div>
+    <div class="card"><img src="https://via.placeholder.com/200?text=Founder" alt="Founder" style="width:120px;height:120px;border-radius:50%;margin-bottom:10px;"><h3>Founder & Creative Director</h3>
+      <p><strong>Twinomujuni Emmanuel (Sizzy-Afro)</strong></p>
+      <p>Leads artistic vision, choreography, and brand direction.</p></div>
     <div class="card">
       <h3>Head Trainer</h3>
-      <p>Oversees training programs, dancer development, discipline, and performance readiness.</p>
+      <p>Oversees training programs and dancer development.</p>
     </div>
     <div class="card">
       <h3>Performance Coordinator</h3>
-      <p>Manages event bookings, stage performances, rehearsals, and show logistics.</p>
+      <p>Manages events, rehearsals, and performances.</p>
     </div>
     <div class="card">
       <h3>Media & Marketing Lead</h3>
-      <p>Handles social media content, promotions, photography, videography, and brand awareness.</p>
+      <p>Handles promotion, content, and brand visibility.</p>
     </div>
     <div class="card">
       <h3>Talent & Community Manager</h3>
-      <p>Leads talent scouting, auditions, registrations, and community outreach programs.</p>
+      <p>Leads auditions, scouting, and community outreach.</p>
+    </div>
+  </div>
+</section>
+
+<section class="booking">
+  <h2>Event Booking</h2>
+  <p>Book Mbarara Dance Academy for performances, workshops, school events, brand activations, and community shows.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>What We Offer</h3>
+      <p>• Afro & Street Dance Performances<br>• Event & Stage Shows<br>• Workshops & Dance Training<br>• Brand & Corporate Activations</p>
+    </div>
+    <div class="card">
+      <h3>How to Book</h3>
+      <p>Contact us directly for availability, pricing, and custom performances.</p>
+      <p><strong>WhatsApp / Call:</strong><br>+256 758 359 591</p>
+      <p><strong>Email:</strong><br>sizzyafro@gmail.com</p>
     </div>
   </div>
 </section>
 
 <section class="cta">
+  <h2>Join MDA</h2>
+  <p>Are you a passionate dancer ready to grow, perform, and represent Mbarara Dance Academy?</p>
+  <a href="https://forms.gle/jTcmFvr6tLZZppXWA" target="_blank" aria-label="Talent Registration">Register Your Talent</a>
+
+  <!-- Existing CTA content -->
   <h2>Book MDA for Your Event</h2>
   <p>Bring energy, culture, and professionalism to your event.</p>
   <a href="mailto:sizzyafro@gmail.com">Contact Us</a>
 </section>
 
+<section class="testimonials">
+  <h2>What People Say</h2>
+  <p>Voices from our dancers, parents, and partners.</p>
+  <div class="grid">
+    <div class="card">
+      <p style="font-style: italic;">“MDA has transformed my confidence and discipline. The training is serious and inspiring.”</p>
+      <p style="margin-top: 10px; font-weight: 600;">— Dancer, Mbarara</p>
+    </div>
+    <div class="card">
+      <p style="font-style: italic;">“Professional performances and great energy. Perfect for youth events.”</p>
+      <p style="margin-top: 10px; font-weight: 600;">— Event Organizer</p>
+    </div>
+    <div class="card">
+      <p style="font-style: italic;">“A safe and creative space where young people grow through dance.”</p>
+      <p style="margin-top: 10px; font-weight: 600;">— Parent</p>
+    </div>
+  </div>
+</section>
+
 <footer>
   <p>© 2025 <span>MDA – Mbarara Dance Academy</span></p>
-  <p>Call / WhatsApp: +256 758 359 591 | TikTok: @mbararadanceacademy</p>
-
+  <p>Call / WhatsApp: +256 758 359 591 | Instagram: @mbararadanceacademy</p>
 </footer>
 
   <!-- WhatsApp Floating Button -->
@@ -167,3 +221,4 @@
   </a>
 </body>
 </html>
+
